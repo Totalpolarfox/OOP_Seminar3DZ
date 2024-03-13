@@ -3,6 +3,16 @@
  * получает фиксированную заработную плату)
  */
 
-public class Worker {
+public class Worker extends Employee{
+
+    private Worker(String surName, String name, int age, double salary) {
+        super(surName, name, age, salary);
+    }
+
+    public static Worker create(String surName, String name, int age, double salary){
+        return new Worker(surName, name, age, salary);
+    }
+
+    
 
 }
