@@ -16,4 +16,15 @@ public class Freelancer extends Employee {
         return this.getClass().getSimpleName();
     }
 
+    @Override
+    public double calculateSalary() {
+        return salary * 15 * 5;
+    }
+
+    @Override
+    public String toString() {
+        return String.format("%s:\t%s %s; возраст: %d; ставка: %.2f руб.; заработная плата: %.2f руб.",
+            ClassName(), surName, name, age, salary, calculateSalary());
+    }
+
 }
