@@ -42,4 +42,30 @@ public class EmployeeFabric {
                 age, salary);
     }
 
+    /**
+     * Генерирует рабочих разных типов (Worker, Freelancer, и т.п)
+     * @param count
+     * @return
+     */
+    public static Employee[] generateEmployees(int count){
+        Employee[] workersList = new Employee[count];
+
+        for (int i = 0; i < count; i++) {
+            int r = random.nextInt(3);
+            switch (r) {
+                case 0:
+                    workersList[i] = generateWorker();
+                    break;
+                case 1:
+                    workersList[i] = generateFreelancer();
+                    break;
+                case 2:
+                    workersList[i] = generateOthers();
+                    break;
+                default:
+                    break;
+            }
+        }               
+        return workersList;
+    }
 }
