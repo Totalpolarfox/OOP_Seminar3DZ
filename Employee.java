@@ -14,7 +14,7 @@ public abstract class Employee implements Comparable<Employee> {  //Comparable �
         return surNameRes;
     }
 
-        /**
+    /**
      * Имя
      */
     protected String name;
