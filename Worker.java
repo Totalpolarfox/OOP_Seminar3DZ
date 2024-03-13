@@ -17,4 +17,15 @@ public class Worker extends Employee{
         return this.getClass().getSimpleName();
     }
 
+    @Override
+    public double calculateSalary() {
+        return salary * 20.8;
+    }
+
+    @Override
+    public String toString() {
+        return String.format("%s:\t\t%s %s; возраст: %d; ставка: %.2f руб.; заработная плата: %.2f руб.",
+            ClassName(), surName, name, age, salary, calculateSalary());
+    }
+
 }
