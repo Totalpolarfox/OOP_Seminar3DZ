@@ -23,6 +23,13 @@ public class Employee {
     /**
      * Ставка заработной платы
      */
-    protected double salary;    
+    protected double salary;
+
+    public Employee(String surName, String name, int age, double salary) {
+        this.surName = surName;
+        this.name = name;
+        this.age = age;
+        this.salary = salary;
+    }
 
 }
