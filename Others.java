@@ -12,4 +12,8 @@ public class Others extends Employee {
         return new Others(surName, name, age, salary);
     }
 
+    public String ClassName(){
+        return this.getClass().getSimpleName();
+    }
+
 }
