@@ -3,7 +3,6 @@ import java.util.Random;
 /**
  * Генератор работников
 */
-import java.util.Random;
 
 public class EmployeeFabric {
 
