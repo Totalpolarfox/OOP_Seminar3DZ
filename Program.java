@@ -20,7 +20,13 @@ public class Program {
         System.out.println();
 
         // дефолтный метод сортировки из Employee (по surName и name)
-        Arrays.sort(workers);  
+        Arrays.sort(workers);
+
+        // метод сортировки по зарплате
+        // Arrays.sort(workers, new SalaryComparator());  
+
+        // метод сортировки по возрасту
+        Arrays.sort(workers, new AgeComparator());  
 
         for (Object worker : workers) {
             System.out.println(worker);
