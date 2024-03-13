@@ -13,6 +13,8 @@ public class Worker extends Employee{
         return new Worker(surName, name, age, salary);
     }
 
-    
+    public String ClassName(){
+        return this.getClass().getSimpleName();
+    }
 
 }
