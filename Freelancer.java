@@ -12,4 +12,8 @@ public class Freelancer extends Employee {
         return new Freelancer(surName, name, age, salary);
     }
 
+    public String ClassName(){
+        return this.getClass().getSimpleName();
+    }
+
 }
