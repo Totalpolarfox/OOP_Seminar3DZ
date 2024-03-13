@@ -4,8 +4,27 @@
 // 3.Придумать свой собственный компаратор (Возможно отсортировать сотрудников по возрасту? Тогда добавьте соответствующее состояние на уровне ваших классов).
 // 4.Продемонстрировать сортировку объектов различного типа с использованием собственного компаратора.
 
+import java.util.Arrays;
+
 public class Program {
     public static void main(String[] args) {
+
+        Employee[] workers = EmployeeFabric.generateEmployees(15);
+        
+        for (Object worker : workers) {
+            System.out.println(worker);
+        }
+
+        System.out.println();
+        System.out.println("***");
+        System.out.println();
+
+        // дефолтный метод сортировки из Employee (по surName и name)
+        Arrays.sort(workers);  
+
+        for (Object worker : workers) {
+            System.out.println(worker);
+        }
         
     }
 
