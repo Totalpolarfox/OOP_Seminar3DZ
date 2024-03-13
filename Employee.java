@@ -1,5 +1,5 @@
 
-public class Employee {
+public abstract class Employee {
 
         /**
      * Имя
@@ -31,5 +31,11 @@ public class Employee {
         this.age = age;
         this.salary = salary;
     }
+
+    /**
+     * Расчет среднемесячной заработной платы
+     * @return заработная плата в месяц
+     */
+    public abstract double calculateSalary();
 
 }
