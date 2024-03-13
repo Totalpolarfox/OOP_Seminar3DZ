@@ -31,4 +31,15 @@ public class EmployeeFabric {
                 age, salary);
     }
 
+    public static Others generateOthers(){
+        String[] names = new String[] { "Адам", "Валентин", "Георгий", "Денис", "Иван", "Лев", "Марк", "Прохор", "Руслан", "Степан" };
+        String[] surnames = new String[] { "Соболев", "Карпов", "Фомин", "Рожков", "Авдеев", "Белоусов", "Емельянов", "Ларионов", "Зайцев", "Смирнов" };
+        int age = random.nextInt(20, 50);
+        int salary = random.nextInt(2000, 3000);
+        return Others.create(
+                surnames[random.nextInt(surnames.length)],
+                names[random.nextInt(names.length)],
+                age, salary);
+    }
+
 }
